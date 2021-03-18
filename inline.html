@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Block & Inline element</title>
+        <link rel="stylesheet" href="./css/style.css">
         <style>
             h3{
                 color: crimson;
@@ -9,97 +10,110 @@
         </style>
     </head>
 <body>
-    <h1 id="head" style="color: blueviolet; font-size: 50px;">Inline element</h1>
+    <div class="container">
+            <section class="header">
+                <div class="logo">
+                    <img src="./img/logo.png" alt="">
+                </div>
+                <div class="menu">
+                    <a href="index.html">HOME</a>
+                    <a href="#">PRACTICE</a>
+                    <a href="inline.html">INLINE</a>
+                    <a href="block.html">BLOCK</a>
+                </div>
+            </section>
 
-    <h3>Code</h3>
-    <p>The HTML <code>button</code> tag defines a clickable button.</p>
-    <p>The CSS <code>background-color</code> property defines the background color of an element.</p>
+            <h1 id="head" style="color: blueviolet; font-size: 50px;">Inline element</h1>
 
-    <br><br><br>
+            <h3>Code</h3>
+            <p>The HTML <code>button</code> tag defines a clickable button.</p>
+            <p>The CSS <code>background-color</code> property defines the background color of an element.</p>
 
-    <h3>kbd</h3>
-    <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p>
-    <p>Press <kbd>Cmd</kbd> + <kbd>C</kbd> to copy text (Mac OS).</p>
+            <br><br><br>
 
-    <br><br><br>
+            <h3>kbd</h3>
+            <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p>
+            <p>Press <kbd>Cmd</kbd> + <kbd>C</kbd> to copy text (Mac OS).</p>
 
-    <h3>object</h3>
-    <h4>Image in Object</h4>
-    <object data="./img/pexels-trace-hudson-2724664.jpg" width="300" height="200"></object>
-    <br>
-    <h4>Website in Object</h4>
-    <object data="https://www.pexels.com/" width="500" height="200"></object>
-    <br>
-    <h4>Video in Object</h4>
-    <object data="video.mp4" width="400" height="300"></object>
+            <br><br><br>
 
-    <br><br><br>
+            <h3>object</h3>
+            <h4>Image in Object</h4>
+            <object data="./img/pexels-trace-hudson-2724664.jpg" width="300" height="200"></object>
+            <br>
+            <h4>Website in Object</h4>
+            <object data="https://www.pexels.com/" width="500" height="200"></object>
+            <br>
+            <h4>Video in Object</h4>
+            <object data="video.mp4" width="400" height="300"></object>
 
-    <h3>This is q </h3>
-    <p>WWF's goal is to:
-        <q>Build a future where people live in harmony with nature.</q>
-        We hope they succeed.</p>
+            <br><br><br>
 
-    <br><br><br>
-    
-    <h3>This is Select tag</h3>
-    <label for="cars">Choose a car:</label>
+            <h3>This is q </h3>
+            <p>WWF's goal is to:
+                <q>Build a future where people live in harmony with nature.</q>
+                We hope they succeed.</p>
 
-    <select name="cars" id="cars">
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="mercedes">Mercedes</option>
-        <option value="audi">Audi</option>
-    </select>
-    <br><br><br>
+            <br><br><br>
+            
+            <h3>This is Select tag</h3>
+            <label for="cars">Choose a car:</label>
 
-    <h3>This is small</h3>
-    <p>This is some normal text.</p>
-    <p><small>This is some smaller text.</small></p>
+            <select name="cars" id="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+            <br><br><br>
 
-    <br><br><br>
+            <h3>This is small</h3>
+            <p>This is some normal text.</p>
+            <p><small>This is some smaller text.</small></p>
 
-    <h3>This is sub</h3>
-    <p>This is Water H<sub>2</sub>O</p>
-    <br><br><br>
+            <br><br><br>
 
-    <h3>This is sup</h3>
-    <p>E = mc <sup>2</sup></p>
+            <h3>This is sub</h3>
+            <p>This is Water H<sub>2</sub>O</p>
+            <br><br><br>
 
-    <br><br><br>
+            <h3>This is sup</h3>
+            <p>E = mc <sup>2</sup></p>
 
-    
-    <h3>The time element</h1>
+            <br><br><br>
 
-    <p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
-    <p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>
-    <p><b>Note:</b> The time element does not render as anything special in any of the major browsers.</p>
+            
+            <h3>The time element</h1>
 
-    <br><br><br>
-    
-    <h3>This is var</h3>
-    <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
-    
+            <p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
+            <p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>
+            <p><b>Note:</b> The time element does not render as anything special in any of the major browsers.</p>
 
-    <br><br><br>
-    <h3>This is output element</h3>
-        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
-            <input type="range" id="a" value="50">
-            +<input type="number" id="b" value="25">
-            =<output name="x" for="a b"></output>
-        </form>
+            <br><br><br>
+            
+            <h3>This is var</h3>
+            <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
+            
 
-      <br><br><br>
+            <br><br><br>
+            <h3>This is output element</h3>
+                <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                    <input type="range" id="a" value="50">
+                    +<input type="number" id="b" value="25">
+                    =<output name="x" for="a b"></output>
+                </form>
 
-      <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
-          <input type="range" id="a" value="50">
-          +<input type="number" id="b" value="50">
-          =<output name="x"></output>
-      </form>
+            <br><br><br>
 
-      <a href="block.html"><h3>Go to Block Elements</h3></a>
+            <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                <input type="range" id="a" value="50">
+                +<input type="number" id="b" value="50">
+                =<output name="x"></output>
+            </form>
 
-        <a href="#head"><h4>Go to top</h4></a>
+            <a href="block.html"><h3>Go to Block Elements</h3></a>
 
+            <a href="#head"><h4>Go to top</h4></a>
+    </div>
 </body>
 </html>
