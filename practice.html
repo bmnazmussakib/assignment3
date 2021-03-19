@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<title>Practice</title>
+<link rel="stylesheet" href="./css/style.css">
+<body>
+    <div class="container">
+        <section class="header">
+            <div class="logo">
+                <img src="./img/logo.png" alt="">
+            </div>
+            <div class="menu">
+                <a href="index.html">HOME</a>
+                <a href="practice.html">PRACTICE</a>
+                <a href="inline.html">INLINE</a>
+                <a href="block.html">BLOCK</a>
+            </div>
+        </section>
+        <br><br><br><br><br><br>
+        <h1>Practice</h1>
+
+        <!-- problem: When trying to play download there is a pop up window is appearing -->
+        <h3>This is Param element</h3>
+        <object data="./audio/">
+            <param name="autoplay" value="true">
+        </object>
+
+        <br><br><br>
+        <h3>The picture element</h3>
+
+        <p>Resize the browser window to load different images.</p>
+
+        <picture>
+            <source media="(min-width:650px)" srcset="./img/coding.png">
+            <source media="(min-width:465px)" srcset="./img/ux.png">
+            <img src="./img/person.jpg" alt="Logo" style="width:auto;">
+        </picture>
+
+        <br><br><br>
+
+        <h1>The progress element</h1>
+
+            <label for="file">Downloading progress:</label>
+            <progress id="file" value="80" max="100"> 32% </progress>
+
+            <br><br><br>
+
+            <h3>The rp element</h3>
+
+            <!-- Didn't Understand -->
+            <ruby>
+            漢 <rt><rp>(</rp>ㄏㄢˋ<rp>)</rp></rt>
+            </ruby>
+
+            <br><br><br>
+
+            <h3>The s element</h3>
+
+            <p><s>Only 50 tickets left!</s></p>
+            <p>SOLD OUT!</p>
+
+            <br><br><br>
+
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+                Sorry, your browser does not support inline SVG.
+            </svg>
+
+            <br><br><br>
+
+            <h1>The template Element</h1>
+
+    <p>Click the button below to display the hidden content from the template element.</p>
+
+    <button onclick="showContent()">Show hidden content</button>
+
+    <template>
+    <h2>Flower</h2>
+    <img src="./img/pexels-trace-hudson-2724664.jpg" width="214" height="204">
+    </template>
+    <br><br><br>
+
+    <h3>The time element</h3>
+
+    <p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
+
+    <p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>
+
+    <p><b>Note:</b> The time element does not render as anything special in any of the major browsers.</p>
+    <br><br><br>
+
+    <!-- Didn't understand properly -->
+    <h3>This is Track element</h3>
+    <video width="320" height="240" controls>
+        <source src="forrest_gump.mp4" type="video/mp4">
+        <source src="forrest_gump.ogg" type="video/ogg">
+        <track src="fgsubtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+        <track src="fgsubtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
+    </video>
+    <br><br><br>
+
+        <h1>The u element</h1>
+        <p>This is some <u>mispeled</u> text.</p>
+        <br><br><br>
+
+        <!-- Video is not playing, when try to reload the page, there is a pop up window is appearing -->
+        <h3>The video element</h3>
+        <video width="320" height="240" controls>
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+
+        <br><br><br>
+
+        <h3>The wbr element</h3>
+
+    <p>Try to shrink the browser window, to view how the very long word in 
+    the paragraph below will break:</p>
+
+    <p>This is a veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryvery<wbr>longwordthatwillbreakatspecific<wbr>placeswhenthebrowserwindowisresized.</p>
+
+    <p><b>Note:</b> The wbr element is not supported in Internet Explorer 11 (or earlier).</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+function showContent() {
+  var temp = document.getElementsByTagName("template")[0];
+  var clon = temp.content.cloneNode(true);
+  document.body.appendChild(clon);
+}
+</script>
+</body>
+</html>
